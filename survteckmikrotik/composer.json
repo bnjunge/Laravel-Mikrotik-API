@@ -1,0 +1,33 @@
+{
+    "name": "mikrotikapisurvtech/survteckmikrotik",
+    "description": "Convert BNjunge Mikrotik API into Composer psr-4 compatible",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "bnjunge",
+            "email": "survtechke@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "BNjunge\\": "src/",
+            "BNjunge\\Net\\Transmitter\\": "src/Net/Transmitter",
+            "BNjunge\\Cache\\": "src/Cache",
+            "BNjunge\\Cache\\SHM\\": "src/Cache/SHM",
+            "BNjunge\\Cache\\SHM\\Adapter\\": "src/Cache/SHM/Adapter",
+            "BNjunge\\Console\\": "src/Console",
+            "BNjunge\\Console\\CommandLine\\": "src/Console/CommandLine",
+            "BNjunge\\Console\\CommandLine\\Action\\": "src/Console/CommandLine/Action",
+            "BNjunge\\Console\\CommandLine\\MessageProvider\\": "src/Console/CommandLine/MessageProvider",
+            "BNjunge\\Console\\Color\\": "src/Console/Color"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "BNjunge\\MikrotikServiceProvider"
+            ]
+        }
+    }
+}
