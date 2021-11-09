@@ -1,5 +1,7 @@
 {
     "name": "mikrotikapisurvtech/survteckmikrotik",
+    "type": "library",
+    "version": "1.0",
     "description": "Convert BNjunge Mikrotik API into Composer psr-4 compatible",
     "license": "MIT",
     "authors": [
